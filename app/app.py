@@ -15,7 +15,7 @@ def hello_world():
         mysalary = request.form['salary']
         mygender = request.form['gender']
         mymarital = request.form['marital']
-        model = load('travel-recommender.joblib')
+        model = load('app/travel-recommender.joblib')
         np_arr = np.array([mysalary, mygender, mymarital])
         predictions = model.predict([np_arr])  
         predictions_to_str = str(predictions)
