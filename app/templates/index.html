@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.my_custom_table {
+  font-family: arial, sans-serif;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my_custom_table td {
+  text-align: left;
+  padding: 4px;
+  background-color: #8EEE8E;
+  width: 200px;
+}
+
+.fit_input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+</style>
+</head>
+<body style="text-align: center;">
+  <h1>Machine Learning - Guess The Place To Travel</h1>
+  <img src="../static/logo.png" width="300" style="margin-top:60px; margin-bottom:60px;">
+
+  <form method="POST">
+    <table class="my_custom_table" border=1>
+      <tr>
+        <td colspan="2">Salary:</td>
+        <td colspan="2"><input type="number" name="salary" min="0" class="fit_input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Gender: (0 for male, 1 for female)</td>
+        <td colspan="2"><input type="number" name="gender" min="0" max="1" class="fit_input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Marital Status: (0 for single, 1 for married, 2 for divorced)</td>
+        <td colspan="2"><input type="number" name="marital" min="0" max="2" class="fit_input"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Press The Button To Submit:</td>
+        <td colspan="2"><center><input type="submit"></center></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background-color:#7F807F; color:white"><center>The Result</center></td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background-color:#D2D2D1; height:18px;">{{ href2 }}</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background-color:#D2D2D1; height:18px;">{{ href3 }}</td>
+      </tr>
+    </table>
+</form>
+
+</body>
+</html>
