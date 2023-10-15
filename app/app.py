@@ -25,6 +25,6 @@ def hello_world():
                                'The suitable place to travel (salary:'+str(mysalary)+
                                ' ,gender:'+str(mygender)+
                                ' ,marital:' +str(mymarital)+
-                               ' )is: ',
+                               ') is: ',
                                href3=predictions_to_str
                             )
